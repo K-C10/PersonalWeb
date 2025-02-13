@@ -1,0 +1,45 @@
+body {
+    background-color: black;
+    background-repeat: no-repeat;
+    height: 100%;
+    
+}
+
+.info {
+    padding: 1% 5%;
+
+    color:#E90802;
+    background-color: rgb(10, 10, 10);
+
+    width: 50%;
+
+    border-style: solid;
+    border-color: #E90802;
+    border-width: 0px thick 0px 0px;
+
+    text-align: left;
+    /*animation: test 2s ease-in-out infinite alternate;*/
+}
+
+header {
+    background-color: black;
+    color:#E90802;
+
+    text-align: center;
+    text-rendering: geometricPrecision;
+
+    
+}
+
+@keyframes test {
+    0% {
+        background-color: black;
+    }
+    100% {
+        background-color:#E90802;
+    }
+}
+
+p {
+    color: red;
+}
