@@ -23,7 +23,7 @@ p.info {
     margin-top: 3%;
 
     color: var(--main-accent-color);
-    background-image: url(/assets/designs/TextBackground2.png);
+    background-image: url(./assets/designs/TextBackground2.png);
     background-size:cover;
     background-size: 100%;
     background-repeat: no-repeat;
