@@ -66,16 +66,23 @@ div.info {
 }
 
 div.banner {
+    position: sticky;
+    top: 0;
     display:flex;
     background-color: var(--main-background-color);
     color: var(--main-accent-color);
 
     padding: 1% 2.5%;
-    margin: -.6%;
+    border-left-width: 0px;
+    margin: 0px;
 
-    border-bottom-width: 1vm;
+    border-color: white;
     border-style: solid;
+
+    /*border-style: solid;
     border-color: var(--main-accent-color);
+    border-bottom-width: thin;*/
+
 
     text-align: center;
     font-size: 5vw;
@@ -83,9 +90,31 @@ div.banner {
 
     font-family: "Audiowide", Courier, monospace;
 }
+/*TODO: fix <a> and image attribute not fitting image on bottom height wise */
+a {
+    width: 7%;
+    background-color: blue;
+    position: relative;
+    
+
+
+    transition-timing-function: ease-in-out;
+    transition: 
+    width .5s,
+    transform .5s;
+}
 
 img.home {
-    width: 10%;
+    width: 100%;
+    
+    border-color: white;
+    border-style: solid;
+    border-width: thin;
+}
+
+a:hover {
+    width: 8%;
+    transform: translate(-5%, -5%);
 }
 
 p {
