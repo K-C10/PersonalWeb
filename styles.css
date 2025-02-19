@@ -12,24 +12,42 @@ body {
     
 }
 
-header {
-    margin-left: 1%;
+/*  margin-left: 1%;
     padding: 1% 2%;
-}
+    text-align: center;
+    font-size: 5vh;
+    font-style: italic;
 
+    font-family: "Audiowide", Courier, monospace;
+*/
+
+header {
+    
+    text-align:left;
+
+    height: 10vh;
+    line-height: 10vh;
+    
+    font-size: 7vh;
+    font-style: italic;
+    font-family: "Audiowide", Courier, monospace;
+
+    margin-left: 1vw;
+}
+/* TODO: fix paragraph element height not fitting items */
 p.info {
     padding:1% 2%;
     padding-right: 7%;
     margin-top: 3%;
 
     color: var(--main-accent-color);
-    background-image: url(./assets/designs/TextBackground2.png);
-    background-size:cover;
-    background-size: 100%;
+    background-image: url(./assets/designs/TextBackground2.webp);
+    background-size: cover;
     background-repeat: no-repeat;
 
 
     width: 45%;
+    min-height: fit-content;
 
     font-size: 1vw;
 
@@ -66,57 +84,114 @@ div.info {
 }
 
 div.banner {
+
+    height: 10vh;
+
+    z-index: 100;
     position: sticky;
     top: 0;
-    display:flex;
+    display: flex;
     background-color: var(--main-background-color);
     color: var(--main-accent-color);
 
     padding: 1% 2.5%;
-    border-left-width: 0px;
+    padding-top: 0px;
+
+    border-width: 0px;
+    border-bottom-width: thick;
+
     margin: 0px;
 
-    border-color: white;
+
+
+    border-color: var(--main-accent-color);
     border-style: solid;
+
+
+
 
     /*border-style: solid;
     border-color: var(--main-accent-color);
     border-bottom-width: thin;*/
-
-
-    text-align: center;
-    font-size: 5vw;
-    font-style: italic;
-
-    font-family: "Audiowide", Courier, monospace;
 }
+
 /*TODO: fix <a> and image attribute not fitting image on bottom height wise */
-a {
-    width: 7%;
-    background-color: blue;
-    position: relative;
-    
-
-
-    transition-timing-function: ease-in-out;
-    transition: 
-    width .5s,
-    transform .5s;
+a.home {
+    height: 10vh;
+    position: relative;    
 }
 
 img.home {
-    width: 100%;
-    
-    border-color: white;
-    border-style: solid;
+    height: 10vh;
+
+    border-style:none;
     border-width: thin;
+
+    transition-timing-function: ease-in-out;
+    transition: 
+    height .5s,
+    transform .5s;
 }
 
-a:hover {
-    width: 8%;
+img.home:hover {
+    height: 12vh;
     transform: translate(-5%, -5%);
 }
 
 p {
     color: var(--main-accent-color);
+}
+
+dl {
+  
+}
+
+li {
+    margin-top: 1%;
+    background-color: red;
+    font-size: 2vw;
+}
+
+dd.section.projects {
+    background-image: url(./assets/images/Robot.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 10%;
+    padding-top: 10%;
+
+    background-position-y:center;
+    background-attachment: fixed;
+
+
+}
+
+dd.section.drone_photos {
+    background-image: url(./DronePhotos/media/images/DJI_0897.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 25%;
+
+    background-position-y:center;
+    background-attachment: fixed;
+}
+
+dd.section.simple_designs {
+    background-image: url(./assets/images/Robot.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 25%;
+
+    background-position-y:center;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+.tester {
+    background-color: white;
+    z-index: 1001;
+    position: fixed;
+    top: 0%;
 }
