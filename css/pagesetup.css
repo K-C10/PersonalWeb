@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+
+:root {
+    /*#E90802*/
+    --main-background-color: rgb(30, 30, 30);
+    --main-accent-color: #E90802;
+    --image-border-color: var(--main-accent-color);
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(40, 40, 40);
+    color: var(--main-accent-color);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+div.banner {
+
+    height: 10vh;
+
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: var(--main-background-color);
+    color: var(--main-accent-color);
+
+    padding: 1% 2.5%;
+    padding-top: 0px;
+
+    border-width: 0px;
+    border-bottom-width: thick;
+
+    margin: 0px;
+
+
+
+    border-color: var(--main-accent-color);
+    border-style: solid;
+
+
+
+
+    /*border-style: solid;
+    border-color: var(--main-accent-color);
+    border-bottom-width: thin;*/
+}
+
+header {
+    
+    text-align:left;
+
+    height: 10vh;
+    line-height: 10vh;
+    
+    font-size: 7vh;
+    font-style: italic;
+    font-family: "Audiowide", Courier, monospace;
+
+    margin-left: 1vw;
+}
+
+img.home {
+    height: 10vh;
+
+    border-style:none;
+    border-width: thin;
+
+    transition-timing-function: ease-in-out;
+    transition: 
+    height .5s,
+    transform .5s;
+}
+
+img.home:hover {
+    height: 12vh;
+    transform: translate(-5%, -5%);
+}

@@ -1,0 +1,52 @@
+li {
+    margin-top: 1%;
+    font-size: 5vh;
+    background-color: var(--main-accent-color);
+    
+}
+
+dd.section {
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 10%;
+    padding-top: 10%;
+
+    background-position-y:center;
+    background-attachment: fixed;
+
+    text-align: center;
+    opacity: 70%;
+
+    margin-left: 0px;
+
+    transition: 
+    opacity .25s;
+}
+
+dd.section:hover {
+    opacity: 30%;
+}
+
+
+a {
+    text-decoration: none;
+    transition:
+    color .25s;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:active {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}

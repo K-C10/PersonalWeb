@@ -1,0 +1,48 @@
+/* TODO: fix paragraph element height not fitting items */
+p.info {
+    padding:1% 2%;
+    padding-right: 7%;
+    margin-top: 3%;
+
+    color: var(--main-accent-color);
+    background-image: url(./../assets/designs/TextBackground2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    width: 45%;
+    min-height: fit-content;
+
+    font-size: 1vw;
+
+    text-align: left;
+
+    font-family: sans-serif;
+}
+
+img.info{
+    border-width: 1vm;
+    border-radius: 2.5%;
+    border-color: var(--image-border-color);
+    border-style: solid;
+
+    padding: 1%;
+
+    margin: auto;
+
+    width: 30%;
+
+    background-color:var(--main-background-color);
+
+    object-fit:scale-down;
+}
+
+div.info {
+    /*background-color: white;*/
+
+    display:flex;
+    padding-top: 3%;
+    margin:auto;
+
+    width: 100%;
+}
